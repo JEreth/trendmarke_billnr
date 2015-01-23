@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<config>
+	<menu>
+		<sales>
+			<children>
+				<billnr translate="title" module="billnr">
+					<title>Rechnungsnummern ändern</title>
+					<sort_order>500</sort_order>
+					<action>adminhtml/trendmarke_billnr</action>
+				</billnr>
+			</children>
+		</sales>
+	</menu>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<catalog>
+						<children>
+							<billnr translate="title" module="billnr">
+								<title>Rechnungsnummern ändern</title>
+								<sort_order>500</sort_order>
+							</billnr>
+						</children>
+					</catalog>
+					<system>
+						<children>
+							<config>
+								<children>
+									<billnr translate="title" module="billnr">
+										<title>Rechnungsnummern</title>
+									</billnr>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

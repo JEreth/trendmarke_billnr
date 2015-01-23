@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+	
+	<adminhtml_trendmarke_billnr_index>
+		<reference name="content">
+			<block type="billnr/adminhtml_trendmarke_billnr" name="billnr" />
+		</reference>
+	</adminhtml_trendmarke_billnr_index>
+
+	<adminhtml_trendmarke_billnr_edit>
+		<reference name="left">
+			<block type="billnr/adminhtml_trendmarke_billnr_edit_tabs" name="billnr_left" />
+		</reference>
+		<reference name="content">
+			<block type="billnr/adminhtml_trendmarke_billnr_edit" name="billnr_content" />
+		</reference>
+	</adminhtml_trendmarke_billnr_edit>
+	
+</layout>

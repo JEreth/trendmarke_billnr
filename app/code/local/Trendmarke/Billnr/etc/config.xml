@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Trendmarke_Billnr>
+			<version>0.1.0</version>
+		</Trendmarke_Billnr>
+	</modules>
+	<global>
+	
+		<helpers>
+			<billnr>
+				<class>Trendmarke_Billnr_Helper</class>
+			</billnr>
+		</helpers>
+	
+		 <blocks>
+            <billnr>
+                <class>Trendmarke_Billnr_Block</class>
+            </billnr>
+        </blocks>
+		
+		
+	</global>
+	
+	<adminhtml>
+		<layout>
+            <updates>
+                <billnr>
+                    <file>billnr.xml</file>
+                </billnr>
+            </updates>
+        </layout>
+    </adminhtml>
+	
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<billnr before="Mage_Adminhtml">Trendmarke_Billnr_Adminhtml</billnr>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	
+</config>
